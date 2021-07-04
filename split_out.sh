@@ -46,7 +46,7 @@ function split {
 	case $limit_tp in 
 		-b|--bytes) 		wc_option='-c';;
 		-c|--line-bytes)	wc_option='-L';;
-		-l|--lines)			wc_option='-l';;
+		-l|--lines)		wc_option='-l';;
 	esac 
 
 #If the limit is exceeded 
