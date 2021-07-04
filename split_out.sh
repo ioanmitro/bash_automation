@@ -3,17 +3,15 @@
 # The output will be split only if the input exceedsnout limit, but the split command 
 # always creates at least one new file
 
-#SOLUTION:
-#The following example illustrates a way to break up input into fixed sizes only
+#The following code illustrates a way to break up input into fixed sizes only
 #if the input exceeds the size limit
 
 
 #Output fixed-size pieces of input ONLY if the limit is exceeded 
 # Called like: Split <file> <prefix> <limit option> <limit argument>
 # e.g. Split $output ${output} 
-# See split(1) and wc(1) for option details
 
-function Split {
+function split {
 
 	local file = $1
 	local prfx = $2
