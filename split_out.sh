@@ -1,13 +1,14 @@
 #!/bin/bash
 
-# The output will be split only if the input exceedsnout limit, but the split command 
-# always creates at least one new file
+# The output will be split only if the input exceeds user's limit
+# and always create at least one new file
 
 # The following code illustrates a way to break up input into fixed sizes only
 # if the input exceeds the size limit
+# call usage split_out <myfile> <prfx> <limit_tp> <limit_sz>
 
 # Function of fixed-size pieces split when the limit is exceeded 
-function split {
+function split_out {
 
 	local myfile = $1
 	local prfx = $2
